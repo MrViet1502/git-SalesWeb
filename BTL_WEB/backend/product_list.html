@@ -1,0 +1,192 @@
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="ckfinder/ckfinder.js"></script>
+    <title>Admin-Ivy</title>
+</head>
+<body>
+  
+<section class="admin-content row space-between">
+    <div class="admin-content-left">
+        <div class="header-top-left">
+            <a href="index.html">
+                <p> <span>I</span>vy</p>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#"> <img style="width:20px" src="icon/hi.png" alt="">Chào: <span
+                        style="color:blueviolet; font-size:22px">
+                    </span><span style="color: red; font-size:20px">&#10084;</span></a>
+            <li><a href="#"><img style="width:20px" src="icon/options.png" alt="">Danh Mục</a>
+                <ul>
+                    <li><a href="#">Danh sách</a></li>
+                    <li><a href="#">Thêm</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img style="width:20px" src="icon/menu.png" alt="">Loại Sản Phẩm</a>
+                <ul>
+                    <li><a href="#">Danh sách</a></li>
+                    <li><a href="#">Thêm</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img style="width:20px" src="icon/colour.png" alt="">Màu sắc</a>
+                <ul>
+                    <li><a href="#">Danh sách</a></li>
+                    <li><a href="#">Thêm</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img style="width:20px" src="icon/article.png" alt="">Sản phẩm</a>
+                <ul>
+                    <li><a href="product_list.html">Danh sách</a></li>
+                    <li><a href="product_add.html">Thêm</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img style="width:20px" src="icon/picture.png" alt="">Ảnh Sản phẩm</a>
+                <ul>
+                    <li><a href="">Danh sách</a></li>
+                    <li><a href="">Thêm</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img style="width:20px" src="icon/size.png" alt="">Size Sản phẩm</a>
+                <ul>
+                    <li><a href="">Danh sách</a></li>
+                    <li><a href="">Thêm</a></li>
+                </ul>
+            </li>
+
+            <li><a href=""> <img style="width:20px" src="icon/logout.png" alt="">Đăng Xuất</a>
+
+            </li>
+        </ul>
+    </div>      
+        
+        <div class="admin-content-right">
+            <div class="table-content">
+                <table>
+                    <tr>
+                        <th>Stt</th>
+                        <th>ID</th>
+                        <th>Tiêu đề</th>
+                        <th>Mã</th>
+                        <th>Danh mục</th>
+                        <th>Loại sản phẩm</th>
+                        <th>Màu</th>   
+                        <th>Giá</th> 
+                        <th>Chi tiết</th> 
+                        <th>Bảo quản</th>   
+                        <th>Ảnh</th>   
+                        <th>Ảnh sản phẩm</th>     
+                        <th>Size sản phẩm</th>                
+                        <th>Tùy chỉnh</th>
+                    </tr>
+                                      <tr>
+                        <td> 1</td>
+                        <td> 40</td>
+                        <td> ÁO SƠ MI SLIM VẢI BAMBOO.....</td>
+                        <td> MSP: 17E2977</td>
+                        <td> NAM</td>
+                        <td> Áo Nam</td>
+                        <td> Xanh Tím Than</td>
+                        <td> 199000</td>
+                        <td> <p>&Aacute;o sơ mi cổ.....</td>
+                        <td> <p>Chi tiết bảo quản.....</td>                  
+                        <td> <img style="width: 100px; height: 50px;object-fit: contain;" src="uploads/420105c7cd.png" alt=""></td>                
+                        <td><a href="anhsanphamlist.php?sanpham_id=40">Xem</a></td>
+                        <td><a href="sizesanphamlist.php?sanpham_id=40">Xem</a></td>
+                        <td><a href="productedit.php?sanpham_id=40">Sửa</a>|
+                        <a href="productdelete.php?sanpham_id=40">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td> 2</td>
+                        <td> 39</td>
+                        <td> QUẦN DÀI REGULAR CẠP 2.....</td>
+                        <td> MSP: 22E2922</td>
+                        <td> NAM</td>
+                        <td> Áo Nam</td>
+                        <td> Nude </td>
+                        <td> 790000</td>
+                        <td> <p>Quần.....</td>
+                        <td> <p>Chi tiết bảo quản.....</td>                  
+                        <td> <img style="width: 100px; height: 50px;object-fit: contain;" src="uploads/2fcb67303e.png" alt=""></td>                
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Sửa</a>|
+                        <a href="">Xóa</a></td>
+                    </tr>
+                                        <tr>
+                        <td> 3</td>
+                        <td> 38</td>
+                        <td> ÁO THUN NAM CỔ TRÒN MS.....</td>
+                        <td> MSP: 57E2948</td>
+                        <td> NAM</td>
+                        <td> Áo Nam</td>
+                        <td> Xanh Tím Than</td>
+                        <td> 249000</td>
+                        <td> <p>&Aacute;o thun nam cổ.....</td>
+                        <td> <p>Chi tiết bảo quản.....</td>                  
+                        <td> <img style="width: 100px; height: 50px;object-fit: contain;" src="uploads/420105c7cd.png" alt=""></td>                
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Sửa</a>|
+                        <a href="">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td> 37</td>
+                        <td> QUẦN DÀI SLIM KHUY LỆCH.....</td>
+                        <td> MSP: 22E2953</td>
+                        <td> NAM</td>
+                        <td> Áo Nam</td>
+                        <td> Cam </td>
+                        <td> 990000</td>
+                        <td> <p>Quần d&agrave;i đai.....</td>
+                        <td> <p>Chi tiết bảo quản.....</td>                  
+                        <td> <img style="width: 100px; height: 50px;object-fit: contain;" src="uploads/420105c7cd.png" alt=""></td>                
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Sửa</a>|
+                        <a href="">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td> 35</td>
+                        <td> ÁO SƠ MI SLIM FIT TAY.....</td>
+                        <td> MSP: 16E2995</td>
+                        <td> NAM</td>
+                        <td> Áo Nam</td>
+                        <td> Cam </td>
+                        <td> 890000</td>
+                        <td> <p>&Aacute;o sơ mi cổ.....</td>
+                        <td> <p>Chi tiết bảo quản.....</td>                  
+                        <td> <img style="width: 100px; height: 50px; object-fit: contain;" src="uploads/420105c7cd.png" alt=""></td>                
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Xem</a></td>
+                        <td><a href="">Sửa</a>|
+                        <a href="">Xóa</a></td>
+                    </tr>
+              
+            
+                </table>
+               </div>        
+        </div>
+    </section>
+    <section>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>  

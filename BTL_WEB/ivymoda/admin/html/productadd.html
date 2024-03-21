@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <title>Admin-Slider</title>
+</head>
+<body>
+    <section class="top space-between row">
+        <img src="../image/logo.png" alt="">
+        <ul>
+            <li>Đăng xuất</li>
+        </ul>
+    </section>
+    <section class="admin-content row space-between">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="#">Slider</a>
+                    <ul>
+                        <li><a href="sliderlist.php">Danh sách</a></li>
+                        <li><a href="slideradd.php">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Danh mục</a>
+                    <ul>
+                        <li><a href="">Danh sách</a></li>
+                        <li><a href="">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Loại sản phẩm</a>
+                    <ul>
+                        <li><a href="">Danh sách</a></li>
+                        <li><a href="">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Danh sách</a></li>
+                        <li><a href="">Thêm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>  
+        <div class="admin-content-right">
+            <div class="product-add-content">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Tên sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input type="text" name="product_name"> <br>
+                    <label for="">Chọn danh mục<span style="color: red;">*</span></label> <br>
+                    <select name="" id="">
+                        <option value="#">--Chọn--</option>
+                    </select>
+                    <label for="">Chọn loại sản phẩm<span style="color: red;">*</span></label> <br>
+                    <select name="" id="">
+                        <option value="#">--Chọn--</option>
+                    </select> 
+                    <label for="">Giá sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input type="number" name="product_price"> <br>      
+                    <label for="">Mô tả sản phẩm<span style="color: red;">*</span></label> <br>
+                    <textarea name="" id="" cols="60" rows="10"> </textarea><br>   
+                    <label for="">Ảnh sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input type="file" name="product_img1"> <br>   
+                    <input type="file" name="product_img2"> <br>   
+                    <input type="file" name="product_img3"> <br>   
+                    <input type="file" name="product_img4"> <br>   
+                    <input type="file" name="product_img5"> <br>   
+                    <button class="admin-btn" type="submit">Gửi</button>  
+                </form>
+            </div>           
+        </div>
+    </section>
+    <section>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>  

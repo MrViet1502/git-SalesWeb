@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="ckfinder/ckfinder.js"></script>
+    <title>Admin-Ivy</title>
+</head>
+
+<body>
+
+    <section class="admin-content row space-between">
+        <div class="admin-content-left">
+            <div class="header-top-left">
+                <a href="index.html">
+                    <p> <span>I</span>vy</p>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#"> <img style="width:20px" src="icon/hi.png" alt="">Chào: <span
+                            style="color:blueviolet; font-size:22px">
+                        </span><span style="color: red; font-size:20px">&#10084;</span></a>
+                <li><a href="#"><img style="width:20px" src="icon/options.png" alt="">Danh Mục</a>
+                    <ul>
+                        <li><a href="#">Danh sách</a></li>
+                        <li><a href="#">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img style="width:20px" src="icon/menu.png" alt="">Loại Sản Phẩm</a>
+                    <ul>
+                        <li><a href="#">Danh sách</a></li>
+                        <li><a href="#">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img style="width:20px" src="icon/colour.png" alt="">Màu sắc</a>
+                    <ul>
+                        <li><a href="#">Danh sách</a></li>
+                        <li><a href="#">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img style="width:20px" src="icon/article.png" alt="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="product_list.html">Danh sách</a></li>
+                        <li><a href="product_add.html">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img style="width:20px" src="icon/picture.png" alt="">Ảnh Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Danh sách</a></li>
+                        <li><a href="">Thêm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img style="width:20px" src="icon/size.png" alt="">Size Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Danh sách</a></li>
+                        <li><a href="">Thêm</a></li>
+                    </ul>
+                </li>
+
+                <li><a href=""> <img style="width:20px" src="icon/logout.png" alt="">Đăng Xuất</a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content-right">
+            <div class="product-add-content">
+                <form action="productadd.html" method="POST" enctype="multipart/form-data">
+                    <label for="">Tên sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input required type="text" name="sanpham_tieude"> <br>
+                    <label for="">Mã sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input required type="text" name="sanpham_ma"> <br>
+                    <!-- <label for="">Ngày bài viết<span style="color: red;">*</span></label> <br>
+                    <input type="text" name="baiviet_ngay"> <br>
+                    <label for="">Tác giả bài viết<span style="color: red;">*</span></label> <br>
+                    <input type="text" name="baiviet_tacgia"> <br> -->
+                    <label for="">Chọn danh mục<span style="color: red;">*</span></label> <br>
+                    <select required="required" name="danhmuc_id" id="danhmuc_id">
+                        <option value="">--Chọn--</option>
+                        <option value="6">THÔNG TIN</option>
+                        <option value="5">TIN TỨC</option>
+                        <option value="4">BỘ SƯU TẬP</option>
+                        <option value="3">TRẺ EM</option>
+                        <option value="2">NAM</option>
+                        <option value="1">NỮ</option>
+                    </select>
+                    <label for="">Chọn Loại sản phẩm<span style="color: red;">*</span></label> <br>
+                    <select required="required" name="loaisanpham_id" id="loaisanpham_id">
+                        <option value="">--Chọn--</option>
+
+                    </select>
+                    <label for="">Chọn Màu sản phẩm<span style="color: red;">*</span></label> <br>
+                    <select required="required" name="color_id" id="">
+                        <option value="">--Chọn--</option>
+                        <option value="7">Kẻ Trắng</option>
+                        <option value="6">Xanh Tím Than</option>
+                        <option value="4">Cam </option>
+                        <option value="3">Nude </option>
+                        <option value="2">Bạc Hà</option>
+                    </select>
+                    <label for="">Chọn Size sản phẩm<span style="color: red;">*</span></label> <br>
+                    <div class="sanpham-size">
+                        <p>S</p> <input type="checkbox" name="sanpham-size[]" value="S">
+                        <p>M</p> <input type="checkbox" name="sanpham-size[]" value="M">
+                        <p>L</p> <input type="checkbox" name="sanpham-size[]" value="L">
+                        <p>XL</p> <input type="checkbox" name="sanpham-size[]" value="XL">
+                        <p>XXL</p> <input type="checkbox" name="sanpham-size[]" value="XXL">
+                    </div>
+                    <label for="">Giá sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input required type="text" name="sanpham_gia"> <br>
+                    <label for="">Chi tiết<span style="color: red;">*</span></label> <br>
+                    <textarea class="ckeditor" required name="sanpham_chitiet" cols="60" rows="5"></textarea><br>
+                    <label for="">Bảo quản<span style="color: red;">*</span></label> <br>
+                    <textarea class="ckeditor" required name="sanpham_baoquan" cols="60" rows="5"></textarea><br>
+                    <label for="">Ảnh đại diện<span style="color: red;">*</span></label> <br>
+                    <input required type="file" name="sanpham_anh"> <br>
+                    <label for="">Ảnh Sản phẩm<span style="color: red;">*</span></label> <br>
+                    <input required type="file" multiple name="sanpham_anhs[]"> <br>
+                    <button class="admin-btn" name="submit" type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //     $(".ckeditor").each(function(){
+        //         CKEDITOR.replace( this.id, {
+        // 	filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+        // 	filebrowserUploadUrl: '/ckfinder/core/connector/html/connector.html?command=QuickUpload&type=Files'
+        // } );
+        //     })
+        CKEDITOR.replace('ckeditor', {
+            filebrowserBrowseUrl: 'ckfinder/ckfinder.php',
+            filebrowserUploadUrl: 'ckfinder/core/connector/html/connector.html?command=QuickUpload&type=Files'
+        });
+
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#danhmuc_id").change(function () {
+                // alert($(this).val())
+                var x = $(this).val()
+                $.get("ajax/productadd_ajax.html", { danhmuc_id: x }, function (data) {
+                    $("#loaisanpham_id").html(data);
+                })
+
+            })
+        })
+    </script>
+</body>
+
+</html>
